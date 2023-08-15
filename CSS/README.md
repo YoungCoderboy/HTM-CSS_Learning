@@ -116,6 +116,67 @@ color:green;
 
 Combine the Selector:
 .container p{
+
 <!-- only those paragraph are selected those are inside the container -->
+
 color:green;
+}
+
+Color In CSS:
+-color: property contorl the color of element
+-background_color: property contorl the background color of element
+-you can also use background element to set the color of background but this element is not limited to backgroung color you can also set the background image of element
+-140+ inbuild color
+-rgba() allows us to contorl the opacity a==[0,1];
+-HexValue represent RRGGBB
+
+Units:
+-absolute,relative
+-pixels
+-em,rem
+-vw,vh
+-font-size,height,width
+
+Pixels:
+-oversimplified form of unit
+-absolute value, one dot on the screen;
+-font-size:size of font
+-width:width of element
+-height:height of element
+
+Percent Unit:
+-relative unit/value. Depends on parents
+-while using relative unit its parents units should be absolute
+
+em: Relative units,depends on parent
+1em-default is 16px set by browser
+2em-base value(16px)*2=32;
+2em-base value(10px)*2=20;
+
+HTML
+
+<div>
+    <h3 class="relavtive">Some text</h3>
+</div>
+
+CSS
+
+div{
+font-size:10px; --base value,parent value
+}
+.relative{
+font-size:2em; 2\*10:20px
+}
+
+rem: relative, depends on root(html tag is root of element)
+1rem: base_value(16px)\*1:16px
+
+vh:-height-percent of screen
+vw:-width-percent of screen
+
+way to remove default browser style
+\*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
