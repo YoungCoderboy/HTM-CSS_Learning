@@ -1,4 +1,4 @@
-.check{
+/* .check{
 
     font-size: 5vw;
 }
@@ -8,4 +8,20 @@
  
     height: calc(100vh - 50px);
     background: red;
+} */
+
+*{
+    margin:0;
 }
+.navbar{
+
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem ;
+}
+.banner{
+    background: red;
+    /* height: 100vh; */
+    height: calc(100vh - 100px);
+} 

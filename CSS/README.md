@@ -180,3 +180,42 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+
+//way to change text size according to screen size
+.check{
+// heading class
+font-size: 5vw;
+}
+
+.container{
+// div class actually there is no need for div class
+width:50vw;
+height: calc(100vh - 50px);
+background: red;
+
+}
+
+calc Function:
+-perform math operation
+-mix and matching values
+.navbar{
+
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem ;
+
+}
+.banner{
+background: red;
+height: calc(100vh - 100px);
+
+}
+always be careful with calc since you should give space between two value and '-' operator
+
+height: auto,min-height,max-height,overflow
+-height:auto; this will change the height according to content inside element by default height is auto
+-ex: height of div tag depends on content inside the div
+-if the height is not enough to store the content inside the div then it will overflow to avoid that we can use overflow attribute
+-ex:overflow:hidden; overflow:scroll;
+-if we specify the min-height then the content will atleast min-height then it can increase in height
