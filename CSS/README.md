@@ -13,46 +13,47 @@ Inline CSS:
 Internal CSS:
 -Within the head element we add style tag and define CSS there
 
+```html
 <style>
-    h1{
-
-        color:red;
-        font-size:50px;
-    }
-
+  h1 {
+    color: red;
+    font-size: 50px;
+  }
 </style>
+```
 
 internal CSS is great but what if we want another page then we need to define css again hence we use external CSS
 
 External CSS:
 -It can be add using link tag
 
-<link rel="stylesheet" href="./styles.css"/>
+```html
+<link rel="stylesheet" href="./styles.css" />
+```
 
 Power Struggle: Inline CSS > Internal CSS > External CSS
 above order will also get affected by order in which we apply
 ex:
 one:
 
+```html
 <style>
-    h1{
-
-        color:red;
-        font-size:50px;
-    }
-
+  h1 {
+    color: red;
+    font-size: 50px;
+  }
 </style>
-<link rel="stylesheet" href="./styles.css"/>
+<link rel="stylesheet" href="./styles.css" />
 two:
-<link rel="stylesheet" href="./styles.css"/>
+<link rel="stylesheet" href="./styles.css" />
 <style>
-    h1{
-        //this will get applied
-        color:red;
-        font-size:50px;
-    }
-
+  h1 {
+    //this will get applied
+    color: red;
+    font-size: 50px;
+  }
 </style>
+```
 
 selector{
 color:green;
@@ -68,29 +69,31 @@ There are many type of selector:
 -within the decleration we have property and value
 
 Element Selector:
-h1{
-color:red;
-font-size:20px;
-}
+
+```html
+h1{ color:red; font-size:20px; }
+```
 
 Group Selector:
-h1,h2,p{
-color:green;
-}
+
+```html
+h1,h2,p{ color:green; }
+```
 
 ID Selector:
 -use # for target
-#title{
-color:blue;
-background:red;
-}
+
+```html
+#title{ color:blue; background:red; }
+```
 
 Class Selector:
 -use . for target
-.redElement{
-color:red;
-background:black;
-}
+
+```html
+.redElement{ color:red; background:black; }
+```
+
 we can add multiple class to same element or same class to multiple element
 
 Div and span are used to grouping element
@@ -100,9 +103,10 @@ Span: used to Group inline content
 Inheritance:
 Children inherit styles from the parent, unless have their own styles
 
-body{
-color:red;
-}
+```html
+body{ color:red; }
+```
+
 all other child will inherite color red from body unless they have there own styles
 if you add multiple rule of css then last rule will govern the defined property
 
@@ -110,17 +114,20 @@ ID > Class > Element specificity > Universal Specificity
 
 Unversal Specifier:
 -it is use to remove default browser style
-\*{
-color:green;
-}
+
+```html
+*{ color:green; }
+```
 
 Combine the Selector:
+
+```html
 .container p{
 
 <!-- only those paragraph are selected those are inside the container -->
 
-color:green;
-}
+color:green; }
+```
 
 Color In CSS:
 -color: property contorl the color of element
@@ -155,18 +162,18 @@ em: Relative units,depends on parent
 
 HTML
 
+```html
 <div>
-    <h3 class="relavtive">Some text</h3>
+  <h3 class="relavtive">Some text</h3>
 </div>
+```
 
 CSS
 
-div{
-font-size:10px; --base value,parent value
-}
-.relative{
-font-size:2em; 2\*10:20px
-}
+```html
+div{ font-size:10px; --base value,parent value } .relative{ font-size:2em;
+2\*10:20px }
+```
 
 rem: relative, depends on root(html tag is root of element)
 1rem: base_value(16px)\*1:16px
@@ -175,42 +182,28 @@ vh:-height-percent of screen
 vw:-width-percent of screen
 
 way to remove default browser style
-\*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+
+```html
+*{ margin:0; padding:0; box-sizing:border-box; }
+```
 
 //way to change text size according to screen size
-.check{
-// heading class
-font-size: 5vw;
-}
 
-.container{
-// div class actually there is no need for div class
-width:50vw;
-height: calc(100vh - 50px);
-background: red;
-
-}
+```html
+.check{ // heading class font-size: 5vw; } .container{ // div class actually
+there is no need for div class width:50vw; height: calc(100vh - 50px);
+background: red; }
+```
 
 calc Function:
 -perform math operation
 -mix and matching values
-.navbar{
 
-    background: blue;
-    height: 100px;
-    color: white;
-    font-size: 3rem ;
+```html
+.navbar{ background: blue; height: 100px; color: white; font-size: 3rem ; }
+.banner{ background: red; height: calc(100vh - 100px); }
+```
 
-}
-.banner{
-background: red;
-height: calc(100vh - 100px);
-
-}
 always be careful with calc since you should give space between two value and '-' operator
 
 height: auto,min-height,max-height,overflow
