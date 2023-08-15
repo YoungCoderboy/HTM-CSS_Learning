@@ -70,28 +70,41 @@ There are many type of selector:
 
 Element Selector:
 
-```html
-h1{ color:red; font-size:20px; }
+```css
+h1 {
+  color: red;
+  font-size: 20px;
+}
 ```
 
 Group Selector:
 
-```html
-h1,h2,p{ color:green; }
+```css
+h1,
+h2,
+p {
+  color: green;
+}
 ```
 
 ID Selector:
 -use # for target
 
-```html
-#title{ color:blue; background:red; }
+```css
+#title {
+  color: blue;
+  background: red;
+}
 ```
 
 Class Selector:
 -use . for target
 
-```html
-.redElement{ color:red; background:black; }
+```css
+.redElement {
+  color: red;
+  background: black;
+}
 ```
 
 we can add multiple class to same element or same class to multiple element
@@ -103,8 +116,10 @@ Span: used to Group inline content
 Inheritance:
 Children inherit styles from the parent, unless have their own styles
 
-```html
-body{ color:red; }
+```css
+body {
+  color: red;
+}
 ```
 
 all other child will inherite color red from body unless they have there own styles
@@ -115,8 +130,10 @@ ID > Class > Element specificity > Universal Specificity
 Unversal Specifier:
 -it is use to remove default browser style
 
-```html
-*{ color:green; }
+```css
+* {
+  color: green;
+}
 ```
 
 Combine the Selector:
@@ -183,13 +200,17 @@ vw:-width-percent of screen
 
 way to remove default browser style
 
-```html
-*{ margin:0; padding:0; box-sizing:border-box; }
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 ```
 
 //way to change text size according to screen size
 
-```html
+```css
 .check{ // heading class font-size: 5vw; } .container{ // div class actually
 there is no need for div class width:50vw; height: calc(100vh - 50px);
 background: red; }
@@ -199,9 +220,17 @@ calc Function:
 -perform math operation
 -mix and matching values
 
-```html
-.navbar{ background: blue; height: 100px; color: white; font-size: 3rem ; }
-.banner{ background: red; height: calc(100vh - 100px); }
+```css
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+}
+.banner {
+  background: red;
+  height: calc(100vh - 100px);
+}
 ```
 
 always be careful with calc since you should give space between two value and '-' operator
