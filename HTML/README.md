@@ -2,6 +2,8 @@ HTML stand for : hyper text markup language
 responsible for web structure
 
 HTML Tags:-->
+```html
+
 
 <h1> ->Heading tag(biggest heading)
 <h6> ->Heading tag(smallest heading)    
@@ -23,10 +25,11 @@ HTML Tags:-->
 <label> -> just join input with some name has 1 attribute of 'for' which equeal to input tag id
 <button> ->simple button having perticular type
 <textarea> -> it is use to take long input from the user
+```
 
 index.html will the home page of any website so each project should have index.html
 
-''' HTML \_this is our first html file
+''' HTML 
 
 <h1>This is our first html file</h1>
 <p>This is my new paragraph</p>
@@ -34,7 +37,7 @@ index.html will the home page of any website so each project should have index.h
 '''
 
 Structure in HTML
-'''
+'''html
 
 <!DOCTYPE html>
 <!-- This is version of html element -->
@@ -59,7 +62,9 @@ lorem provide dummy text it is like the place holder
 ctrl + spacebar -:=> provide back the suggession if we miss
 
 what were we have in between the tags are called attributes
-ex: <img src="" alt=""> here src and alt are attributes
+ex: ```html 
+<img src="" alt="">
+``` here src and alt are attributes
 image tag:
 -Royelty free images: pexels.com , pixabay.com
 -we use width, height attribute to change the width and height of the images
