@@ -1,0 +1,11 @@
+.check{
+
+    font-size: 5vw;
+}
+
+.container{
+    width:50vw;
+ 
+    height: calc(100vh - 50px);
+    background: red;
+}
