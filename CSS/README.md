@@ -247,3 +247,20 @@ Typography Introduction:
 -font-size - size of the fonts
 -font-family - describe the fonts of the element
 -we create font-stack of generic family: becaue if some of the font we mension are not installed or cached by the browser then it will break the code thus we provide stack of fonts so that if top one is not there then next -next will come in use by browser
+-Google font link should be place before styles.css file
+-system fonts are the fonts that's is already installed on ther user computer/devices of the user
+-----fast load time
+-----less headaches
+-----projects look differect
+-some important font
+-----trade winds
+-font-weigth: how thick or thin character in text should be
+-font-styles: sets the fonts style for a text
+-text-align,text-indent
+-text-align make the whole text to move toward speficied location on window may be center,right;
+-text-indent: help to add indentation to element
+-line-height : it is the distince between the lines
+-letter-spacing
+-word-spacing
+-text-transform
+-text-decoration

@@ -1,7 +1,19 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    line-height: 1.5; /*30px*/
+
+
 }
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: 'Cinzel', serif;
     font-size: 50px;
+    letter-spacing: 0.5rem;
+}
+p{
+    word-spacing: 10px;
+}
+a{
+    font-size: 3rem;
+    text-decoration: none;/*remove the underline from the word*/
 }
