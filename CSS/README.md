@@ -241,3 +241,9 @@ height: auto,min-height,max-height,overflow
 -if the height is not enough to store the content inside the div then it will overflow to avoid that we can use overflow attribute
 -ex:overflow:hidden; overflow:scroll;
 -if we specify the min-height then the content will atleast min-height then it can increase in height
+
+Typography Introduction:
+
+-font-size - size of the fonts
+-font-family - describe the fonts of the element
+-we create font-stack of generic family: becaue if some of the font we mension are not installed or cached by the browser then it will break the code thus we provide stack of fonts so that if top one is not there then next -next will come in use by browser
