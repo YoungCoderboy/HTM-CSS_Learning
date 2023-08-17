@@ -262,5 +262,36 @@ Typography Introduction:
 -line-height : it is the distince between the lines
 -letter-spacing
 -word-spacing
--text-transform
+-text-transform: help to change text case
 -text-decoration
+
+```css
+body {
+  font-family: "Silkscreen", cursive;
+  font-size: 20px;
+  line-height: 1.5; /*30px*/
+}
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 50px;
+  letter-spacing: 0.5rem;
+}
+p {
+  word-spacing: 10px;
+}
+a {
+  font-size: 3rem;
+  text-decoration: none; /*remove the underline from the word*/
+}
+```
+
+```html
+<a href="google.com">google.com</a>
+<h1>hey dude i'm main heading</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque
+  accusantium, fugiat quae deserunt repellendus tempore, nobis a non soluta
+  molestiae vero libero deleniti mollitia. Excepturi quia harum consequatur
+  repellendus.
+</p>
+```
