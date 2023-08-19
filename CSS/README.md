@@ -329,8 +329,11 @@ h1 {
 }
 /* simple trick */
 
-*{
-  border:2px solid red;
+* {
+  border: 2px solid red;
 }
-above show all element present and there behavior
+above show all element present and there behavior .div {
+  margin: 3rem auto;
+  /* make this center aligne */
+}
 ```
