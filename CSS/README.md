@@ -295,3 +295,42 @@ a {
   repellendus.
 </p>
 ```
+
+#CSS-Box_Models:
+
+each and every element in css is represented as the box
+magin: distance between element and other element or screen
+border: line between margin and padding
+padding:space is created between content and element  
+content
+
+we have some margin added by browser
+
+```css
+h1 {
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  /* shortcut */
+  /* border: width style color; */
+  /* border-radius:- controls the edges of the border */
+  /* we can also use -ve margin */
+}
+/* text-decoration is use to remove or add underline */
+```
+
+```css
+.one {
+  outline-width: 0.2rem;
+  outline-color: black;
+  outline-style: solid;
+  outline-offset: 10px;
+  /* above one can be -ve and offset create space between border and margine*/
+}
+/* simple trick */
+
+*{
+  border:2px solid red;
+}
+above show all element present and there behavior
+```
