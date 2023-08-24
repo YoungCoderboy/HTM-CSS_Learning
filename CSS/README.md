@@ -337,3 +337,58 @@ above show all element present and there behavior .div {
   /* make this center aligne */
 }
 ```
+
+#Display Property
+
+Element have it setby default
+Block: Always Start with new Line and Span full width
+Inline: Doesnot start with new line and span only content
+
+```html
+<!-- below is block element -->
+<div class="block">i am block element</div>
+<h1 class="block">i am block element</h1>
+<p class="block">i am block element</p>
+```
+
+```html
+<span class="inline">i am inline Element</span>
+<a class="inline">i am inline Element</a>
+<img class="inline" />
+```
+
+```css
+.block {
+  display: inline;
+}
+.inline {
+  display: block;
+}
+```
+
+Horizontal Centering
+-block element get center by:
+--margin: 0 auto ;
+-inline element get center by changing parent element:
+--text-align:center;
+
+Block: browser respects width/height, top/bottom margin
+Inline:browser does not respect width/height, to/bottom margin
+
+```css
+ul li{
+  /* this will remove dot before list  */
+  list-style-type:none;
+  display:block;
+}
+make display block so that it can respect padding or margin
+```
+
+box-sizing
+-default is content-box;
+-we should change to border-box
+-box-sizing:border-box; then padding will apply within the element it doest not change its fixed size
+
+inline-block;:doesnot start with new line but browser respect the margin, width, height
+display:none :- remove from the flow, hide the element collapse the space
+opacity:0 visibility:hidden -hides element preserve the space
