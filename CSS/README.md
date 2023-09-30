@@ -69,7 +69,7 @@ selector{
 -- {}-called decleration block
 -- Within the decleration we have property and value
 
-# Element Selector:
+## Element Selector:
 
 ```css
 h1 {
