@@ -441,3 +441,69 @@ background:linear-gradient(to bottom,red x%,green y%);
 /* here x and y are optional value also these are numerical value more the x more will the solid color is  */
 /* instead of to bottom we can also use degreee value for examle 315deg  */
 ```
+
+```css
+div{
+  /* this will add ovelay on the top of image */
+  /* this will help to see image more clear */
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(path)
+}
+```
+
+
+# float postion media query
+
+```css
+.banner{
+  float: right;
+}
+p{
+  clear:right;
+}
+
+/* make the image float */
+```
+
+to make the column layout set the width parent with 100/no of column then make it float
+
+position:static -default, always positioned according to normal flow 
+position:relative -position relative to its normal  flow use top right left property to change the position
+position:absolute - relative to parent with position position:relative 
+position:fixed - relative to viewpoint stay as we are scrolling 
+position:sticky -toggles between the relative and fixed once the position is met in the viewpoint then it sticks
+body is always positioned relative
+
+# media query
+ responsive design
+ style element on different screen size 
+ min-width ---starting from 
+ max-width ---up to 
+ mobile first 
+
+ ```css
+ @media screen and (min-width){
+    body{
+      background:green;
+    }
+    .banner{
+      color: red;
+    }
+ }
+ ```
+
+ z-index
+ -z-axis
+ -0 by default
+ - does not work on position static
+
+ ::before ::after psedo elements creates element  and insert before and after CONTENT
+ content:'' is required 
+ img: does not work
+
+ ```css
+ p::before{
+  content:'hello there';
+
+ }
+ /* if we dont have any content then we can use width and height so that we can see it else it will not shown */
+ ```
