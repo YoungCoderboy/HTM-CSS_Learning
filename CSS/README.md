@@ -516,3 +516,101 @@ z-index
 
 - div > h1 ==> this will choose only child not all decendent 
 - ::first-line ::first-letter are two pseudo selector
+
+* :hover pseudo class it represent perticular state of element
+```css
+div:hover{
+  color: red;
+}
+```
+
+* Other Pseudo Class:
+- :link - unvisited links with href
+- :visited -visited links 
+- :active - as the user clicks 
+* :root -> selects root element of document, higher specificity html element
+- general style
+- css variable
+
+# Transform, Transition and animation 
+- transform: translate(), rotate(), scale(), skew()
+- transition: change over time
+- animation: change over time with more control
+
+* transform 
+```css
+div{
+  transform: translate(x,y);
+  /* if x is in percent then the in pixel it will x perxent of width or heigh */
+  transform: scale(0.5 ,0); 
+  /* same as scaleX(0.5 ) */
+  transform: rotate(20deg);
+  transform: skew(10deg, 20deg);
+}
+```
+
+* transition 
+```css
+div{
+  transition-propety: background, border-radius ;
+  transition-duration: 1000ms, 2s;
+  transition-delay: 2s;
+}
+
+div:hover{
+  background: wheat;
+  border-radius: 50%;
+
+}
+/* shorthand
+  transition: property time transition-timing delay , same , same for multiple propety;
+*/
+
+
+```
+
+* transition timing: how the transition take place
+- transition-timing-function
+- transition: all 3s here 2s;
+- ease = default
+- ease = slow start, fast , slow end 
+- linear = same speed start to end 
+- ease-in slow start
+- ease-out slow end
+- ease-in-out : slow start ,fast ,slow end 
+```css
+
+div{
+  transition-timing-function: ease;
+}
+
+```
+
+* Animation;
+- this provide multiple state
+
+```css
+.animation[
+
+  animation-name: _name;
+  animation-duration: 10s;
+  animation-iteration-count:2;
+  animation-fill-mode: forward; 
+  /* using above our state doesnt change to original back */
+]
+@keyframe _name{
+  0%{
+    /* properties */
+  }
+  1%{
+
+  }
+  10%{
+
+  }
+  100%{
+
+  }
+}
+
+```
