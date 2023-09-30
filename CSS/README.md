@@ -392,3 +392,52 @@ box-sizing
 inline-block;:doesnot start with new line but browser respect the margin, width, height
 display:none :- remove from the flow, hide the element collapse the space
 opacity:0 visibility:hidden -hides element preserve the space
+
+#image
+
+```css
+div{
+  /* sets the  background image  */
+  background: url('./image/big.jpeg');
+}
+```
+
+if image is small then the background image will repete beacuse of repete property
+```css
+background-repeat:repeat;
+/* ----> default action */
+```
+other values are:
+no-repeat
+repeat-x
+space: add space along with image
+round: if there is space for two image then i will add another image
+
+```css
+background-size: 
+/* this propety is use to fix the size of image  */
+```
+possbile values are:
+cover: try to cover entire div
+contain: try to show entire content
+
+```css
+background-position:
+```
+possible values are:
+center: make the image center of content
+left right top bottom are other value
+we can also use percentage 
+```css
+background-position:0 0; 
+/* we give x and y */
+background-attachment: fixed;
+/* this will fixed the image and move text above it  */
+/* scroll is default behavior */
+```
+
+```css
+background:linear-gradient(to bottom,red x%,green y%);
+/* here x and y are optional value also these are numerical value more the x more will the solid color is  */
+/* instead of to bottom we can also use degreee value for examle 315deg  */
+```

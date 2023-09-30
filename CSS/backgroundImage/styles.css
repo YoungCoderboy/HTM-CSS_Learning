@@ -1,0 +1,66 @@
+/* div{
+    height: 300px;
+    color: white;
+
+}
+.big{
+    background: url('./image/big.jpeg');
+    background-color: green;
+    background-repeat: no-repeat;
+}
+
+.small{
+    background: url('./image/small.jpeg');
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.folder{
+    background: url('./image/folder-img.jpeg');
+    background-color: red;
+    background-repeat: no-repeat;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    min-height: 100vh;
+    height: 300px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.big{
+    background: url('./image/big.jpeg');
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.small{
+    background: url('./image/folder-img.jpeg');
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* this will try to cover whole free space by streaching the image */
+}
+
+.folder{
+   
+    background: url('./image/big.jpeg');
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
