@@ -78,7 +78,7 @@ h1 {
 }
 ```
 
-Group Selector:
+# Group Selector:
 
 ```css
 h1,
@@ -88,8 +88,8 @@ p {
 }
 ```
 
-ID Selector:
--use # for target
+# ID Selector:
+- use # for target
 
 ```css
 #title {
@@ -98,8 +98,8 @@ ID Selector:
 }
 ```
 
-Class Selector:
--use . for target
+# Class Selector:
+- use . for target
 
 ```css
 .redElement {
@@ -108,14 +108,13 @@ Class Selector:
 }
 ```
 
-we can add multiple class to same element or same class to multiple element
+- we can add multiple class to same element or same class to multiple element
 
-Div and span are used to grouping element
-Div: use to group multiple element
-Span: used to Group inline content
+- Div and span are used to grouping element
+- Div: use to group multiple element
+- Span: used to Group inline content
 
-Inheritance:
-Children inherit styles from the parent, unless have their own styles
+- Inheritance: Children inherit styles from the parent, unless have their own styles
 
 ```css
 body {
@@ -123,13 +122,13 @@ body {
 }
 ```
 
-all other child will inherite color red from body unless they have there own styles
-if you add multiple rule of css then last rule will govern the defined property
+- all other child will inherite color red from body unless they have there own styles
+- if you add multiple rule of css then last rule will govern the defined property
 
 ID > Class > Element specificity > Universal Specificity
 
-Unversal Specifier:
--it is use to remove default browser style
+# Unversal Specifier:
+- it is use to remove default browser style
 
 ```css
 * {
@@ -137,7 +136,7 @@ Unversal Specifier:
 }
 ```
 
-Combine the Selector:
+# Combine the Selector:
 
 ```html
 .container p{
@@ -147,38 +146,38 @@ Combine the Selector:
 color:green; }
 ```
 
-Color In CSS:
--color: property contorl the color of element
--background_color: property contorl the background color of element
--you can also use background element to set the color of background but this element is not limited to backgroung color you can also set the background image of element
--140+ inbuild color
--rgba() allows us to contorl the opacity a==[0,1];
--HexValue represent RRGGBB
+# Color In CSS:
+- color: property contorl the color of element
+- background_color: property contorl the background color of element
+- you can also use background element to set the color of background but this element is not limited to backgroung color you can also set the background image of element
+- 140+ inbuild color
+- rgba() allows us to contorl the opacity a==[0,1];
+- HexValue represent RRGGBB
 
-Units:
--absolute,relative
--pixels
--em,rem
--vw,vh
--font-size,height,width
+# Units:
+- absolute,relative
+- pixels
+- em,rem
+- vw,vh
+- font-size,height,width
 
-Pixels:
--oversimplified form of unit
--absolute value, one dot on the screen;
--font-size:size of font
--width:width of element
--height:height of element
+# Pixels:
+- oversimplified form of unit
+- absolute value, one dot on the screen;
+- font-size:size of font
+- width:width of element
+- height:height of element
 
-Percent Unit:
--relative unit/value. Depends on parents
--while using relative unit its parents units should be absolute
+# Percent Unit:
+- relative unit/value. Depends on parents
+- while using relative unit its parents units should be absolute
 
-em: Relative units,depends on parent
-1em-default is 16px set by browser
-2em-base value(16px)*2=32;
-2em-base value(10px)*2=20;
+- em: Relative units,depends on parent
+- 1em-default is 16px set by browser
+- 2em-base value(16px)*2=32;
+- 2em-base value(10px)*2=20;
 
-HTML
+# HTML
 
 ```html
 <div>
@@ -186,40 +185,47 @@ HTML
 </div>
 ```
 
-CSS
+# CSS
 
-```html
+```css
 div{ font-size:10px; --base value,parent value } .relative{ font-size:2em;
 2\*10:20px }
 ```
 
-rem: relative, depends on root(html tag is root of element)
-1rem: base_value(16px)\*1:16px
+- rem: relative, depends on root(html tag is root of element)
+- 1rem: base_value(16px)\*1:16px
 
-vh:-height-percent of screen
-vw:-width-percent of screen
+- vh:-height-percent of screen
+- vw:-width-percent of screen
 
-way to remove default browser style
+* way to remove default browser style
 
 ```css
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+/* //way to change text size according to screen size */
 }
 ```
 
-//way to change text size according to screen size
 
 ```css
-.check{ // heading class font-size: 5vw; } .container{ // div class actually
-there is no need for div class width:50vw; height: calc(100vh - 50px);
-background: red; }
+.check{
+   /* // heading class  */
+   font-size: 5vw; }
+.container{ 
+  /* // div class actually
+  there is no need for div class  */
+  width:50vw; 
+  height: calc(100vh - 50px);
+  background: red;
+}
 ```
 
-calc Function:
--perform math operation
--mix and matching values
+* calc Function:
+- perform math operation
+- mix and matching values
 
 ```css
 .navbar {
@@ -234,37 +240,37 @@ calc Function:
 }
 ```
 
-always be careful with calc since you should give space between two value and '-' operator
+- always be careful with calc since you should give space between two value and '-' operator
 
-height: auto,min-height,max-height,overflow
--height:auto; this will change the height according to content inside element by default height is auto
--ex: height of div tag depends on content inside the div
--if the height is not enough to store the content inside the div then it will overflow to avoid that we can use overflow attribute
--ex:overflow:hidden; overflow:scroll;
--if we specify the min-height then the content will atleast min-height then it can increase in height
+- height: auto,min-height,max-height,overflow
+- height:auto; this will change the height according to content inside element by default height is auto
+- ex: height of div tag depends on content inside the div
+- if the height is not enough to store the content inside the div then it will overflow to avoid that we can use overflow attribute
+- ex:overflow:hidden; overflow:scroll;
+- if we specify the min-height then the content will atleast min-height then it can increase in height
 
-Typography Introduction:
+# Typography Introduction:
 
--font-size - size of the fonts
--font-family - describe the fonts of the element
--we create font-stack of generic family: becaue if some of the font we mension are not installed or cached by the browser then it will break the code thus we provide stack of fonts so that if top one is not there then next -next will come in use by browser
--Google font link should be place before styles.css file
--system fonts are the fonts that's is already installed on ther user computer/devices of the user
------fast load time
------less headaches
------projects look differect
--some important font
------trade winds
--font-weigth: how thick or thin character in text should be
--font-styles: sets the fonts style for a text
--text-align,text-indent
--text-align make the whole text to move toward speficied location on window may be center,right;
--text-indent: help to add indentation to element
--line-height : it is the distince between the lines
--letter-spacing
--word-spacing
--text-transform: help to change text case
--text-decoration
+- font-size - size of the fonts
+- font-family - describe the fonts of the element
+- we create font-stack of generic family: becaue if some of the font we mension are not installed or cached by the browser then it will break the code thus we provide stack of fonts so that if top one is not there then next -next will come in use by browser
+- Google font link should be place before styles.css file
+- system fonts are the fonts that's is already installed on ther user computer/devices of the user
+- ----fast load time
+- ----less headaches
+- ----projects look differect
+- some important font
+- ----trade winds
+- font-weigth: how thick or thin character in text should be
+- font-styles: sets the fonts style for a text
+- text-align,text-indent
+- text-align make the whole text to move toward speficied location on window may be center,right;
+- text-indent: help to add indentation to element
+- line-height : it is the distince between the lines
+- letter-spacing
+- word-spacing
+- text-transform: help to change text case
+- text-decoration
 
 ```css
 body {
@@ -297,15 +303,15 @@ a {
 </p>
 ```
 
-#CSS-Box_Models:
+# CSS-Box_Models:
 
-each and every element in css is represented as the box
-magin: distance between element and other element or screen
-border: line between margin and padding
-padding:space is created between content and element  
-content
-
-we have some margin added by browser
+- each and every element in css is represented as the box
+- magin: distance between element and other element or screen
+- border: line between margin and padding
+- padding:space is created between content and element  
+- content
+- 
+- we have some margin added by browser
 
 ```css
 h1 {
@@ -339,11 +345,11 @@ above show all element present and there behavior .div {
 }
 ```
 
-#Display Property
+# Display Property
 
-Element have it setby default
-Block: Always Start with new Line and Span full width
-Inline: Doesnot start with new line and span only content
+- Element have it setby default
+- Block: Always Start with new Line and Span full width
+- Inline: Doesnot start with new line and span only content
 
 ```html
 <!-- below is block element -->
@@ -367,14 +373,14 @@ Inline: Doesnot start with new line and span only content
 }
 ```
 
-Horizontal Centering
--block element get center by:
---margin: 0 auto ;
--inline element get center by changing parent element:
---text-align:center;
+# Horizontal Centering
+- block element get center by:
+- -margin: 0 auto ;
+- inline element get center by changing parent element:
+- -text-align:center;
 
-Block: browser respects width/height, top/bottom margin
-Inline:browser does not respect width/height, to/bottom margin
+- Block: browser respects width/height, top/bottom margin
+- Inline:browser does not respect width/height, to/bottom margin
 
 ```css
 ul li{
@@ -382,19 +388,19 @@ ul li{
   list-style-type:none;
   display:block;
 }
-make display block so that it can respect padding or margin
+/* make display block so that it can respect padding or margin */
 ```
 
-box-sizing
--default is content-box;
--we should change to border-box
--box-sizing:border-box; then padding will apply within the element it doest not change its fixed size
+* box-sizing
+- default is content-box;
+- we should change to border-box
+- box-sizing:border-box; then padding will apply within the element it doest not change its fixed size
 
-inline-block;:doesnot start with new line but browser respect the margin, width, height
-display:none :- remove from the flow, hide the element collapse the space
-opacity:0 visibility:hidden -hides element preserve the space
+- inline-block;:doesnot start with new line but browser respect the margin, width, height
+- display:none :- remove from the flow, hide the element collapse the space
+- opacity:0 visibility:hidden -hides element preserve the space
 
-#image
+# image
 
 ```css
 div{
@@ -402,33 +408,33 @@ div{
   background: url('./image/big.jpeg');
 }
 ```
+- if image is small then the background image will repete beacuse of repete property
 
-if image is small then the background image will repete beacuse of repete property
 ```css
 background-repeat:repeat;
 /* ----> default action */
 ```
-other values are:
-no-repeat
-repeat-x
-space: add space along with image
-round: if there is space for two image then i will add another image
+- other values are:
+- - no-repeat
+- - repeat-x
+- - space: add space along with image
+- - round: if there is space for two image then i will add another image
 
 ```css
 background-size: 
 /* this propety is use to fix the size of image  */
 ```
-possbile values are:
-cover: try to cover entire div
-contain: try to show entire content
+- possbile values are:
+- cover: try to cover entire div
+- contain: try to show entire content
 
 ```css
 background-position:
 ```
-possible values are:
-center: make the image center of content
-left right top bottom are other value
-we can also use percentage 
+- possible values are:
+- center: make the image center of content
+- left right top bottom are other value
+- we can also use percentage 
 ```css
 background-position:0 0; 
 /* we give x and y */
@@ -465,14 +471,13 @@ p{
 /* make the image float */
 ```
 
-to make the column layout set the width parent with 100/no of column then make it float
-
-position:static -default, always positioned according to normal flow 
-position:relative -position relative to its normal  flow use top right left property to change the position
-position:absolute - relative to parent with position position:relative 
-position:fixed - relative to viewpoint stay as we are scrolling 
-position:sticky -toggles between the relative and fixed once the position is met in the viewpoint then it sticks
-body is always positioned relative
+- to make the column layout set the width parent with 100/no of column then make it float
+- position:static -default, always positioned according to normal flow 
+- position:relative -position relative to its normal  flow use top right left property to change the position
+- position:absolute - relative to parent with position position:relative 
+- position:fixed - relative to viewpoint stay as we are scrolling 
+- position:sticky -toggles between the relative and fixed once the position is met in the viewpoint then it sticks
+- body is always positioned relative
 
 # media query
 - responsive design
