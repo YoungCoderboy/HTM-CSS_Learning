@@ -1,17 +1,18 @@
+# CSS
 Responsible for styling the web
 selector{property:value}
 There are three type of CSS
--Inline CSS
--External CSS
--Internal CSS
+- Inline CSS
+- External CSS
+- Internal CSS
 
-Inline CSS:
--adding style attribute to element
--hard to read
--syntex: style="color:red;"
+# Inline CSS:
+- adding style attribute to element
+- hard to read
+- syntex: style="color:red;"
 
-Internal CSS:
--Within the head element we add style tag and define CSS there
+# Internal CSS:
+- Within the head element we add style tag and define CSS there
 
 ```html
 <style>
@@ -22,53 +23,53 @@ Internal CSS:
 </style>
 ```
 
-internal CSS is great but what if we want another page then we need to define css again hence we use external CSS
+- internal CSS is great but what if we want another page then we need to define css again hence we use external CSS
 
-External CSS:
--It can be add using link tag
+# External CSS:
+- It can be add using link tag
 
 ```html
-<link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 ```
 
-Power Struggle: Inline CSS > Internal CSS > External CSS
-above order will also get affected by order in which we apply
-ex:
-one:
+- Power Struggle: Inline CSS > Internal CSS > External CSS
+- above order will also get affected by order in which we apply
+- ex:
 
 ```html
+<!-- first -->
 <style>
   h1 {
     color: red;
     font-size: 50px;
   }
-</style>
+</style> 
 <link rel="stylesheet" href="./styles.css" />
 two:
 <link rel="stylesheet" href="./styles.css" />
 <style>
   h1 {
-    //this will get applied
+    /* //this will get applied */
     color: red;
     font-size: 50px;
   }
 </style>
-```
 
 selector{
-color:green;
+  color:green;
 }
 
+```
 <!-- CSS Selector -->
 
-There are many type of selector:
--element selector
--class selector
--id selector
--{}-called decleration block
--within the decleration we have property and value
+- There are many type of selector:
+-- element selector
+-- class selector
+-- id selector
+-- {}-called decleration block
+-- Within the decleration we have property and value
 
-Element Selector:
+# Element Selector:
 
 ```css
 h1 {
@@ -474,11 +475,11 @@ position:sticky -toggles between the relative and fixed once the position is met
 body is always positioned relative
 
 # media query
- responsive design
- style element on different screen size 
- min-width ---starting from 
- max-width ---up to 
- mobile first 
+- responsive design
+- style element on different screen size 
+- min-width ---starting from 
+- max-width ---up to 
+- mobile first 
 
  ```css
  @media screen and (min-width){
@@ -491,9 +492,9 @@ body is always positioned relative
  }
  ```
 
- z-index
- -z-axis
- -0 by default
+z-index
+ - z-axis
+ - 0 by default
  - does not work on position static
 
  ::before ::after psedo elements creates element  and insert before and after CONTENT
@@ -507,3 +508,6 @@ body is always positioned relative
  }
  /* if we dont have any content then we can use width and height so that we can see it else it will not shown */
  ```
+
+- div > h1 ==> this will choose only child not all decendent 
+- ::first-line ::first-letter are two pseudo selector
