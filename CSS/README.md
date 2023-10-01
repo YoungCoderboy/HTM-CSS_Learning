@@ -590,14 +590,14 @@ div{
 - this provide multiple state
 
 ```css
-.animation[
-
+.animation
+{
   animation-name: _name;
   animation-duration: 10s;
   animation-iteration-count:2;
   animation-fill-mode: forward; 
   /* using above our state doesnt change to original back */
-]
+}
 @keyframe _name{
   0%{
     /* properties */
@@ -614,3 +614,73 @@ div{
 }
 
 ```
+
+
+# CSS Tutorial
+
+- CSS variables
+- Font awosome Icon
+- text-shadow, box-shadow
+- browser prefixes
+- semantic html
+- object-fit
+- emmet snippets
+
+# CSS Variable
+- custom properties
+- allows to store value in one place and use it later
+- --varname : value;
+- property:var(--varname);
+- scope
+- :root === global
+- element === local
+- any property
+
+```css
+
+:root{
+  --orangeStandard: #f15015;
+  --mainTransition:all 2s linear;
+
+}
+
+h1{
+  color: var(--orangeStandard);
+}
+
+```
+
+
+* free to use icon is on fontawesome.com
+
+* text-shadow and box-shadow
+```css
+h1{
+  text-shadow: 2px 2px 2px red;
+  /* x y blur color*/
+
+}
+
+.box{
+
+  width:200px;
+  height:200px;
+  background:blue;
+  margin:20px;
+  box-shadow:0px 0px 0px green;
+  /* x y blur spread-radius color */
+}
+
+```
+# Browser Prefixes
+- use caniuse.com to chenck whether certain new feature is avaible in the browser
+- shouldiprefix.com 
+
+* semantic Html is just use to structure our element
+- ex: <nav class="navbar"></nav>
+- it provide more structure to your html page 
+
+* object-fit: cover , contain, fill, none, scale-down
+- allows use to resize image and video element in a container
+- make height and width as solid value for the image
+- object-fit: cover ->fit image without distorting the image  
